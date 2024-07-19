@@ -9,6 +9,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Echo Api Key
+        run: echo ${{ secrets.LOST_PIXEL_API_KEY }}
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
